@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>simpsite7591</title>
+    <meta name="description" content="A simple static site deployed with GitHub Pages." />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f3ee;
+        --panel: #fffdf9;
+        --text: #1d1d1b;
+        --muted: #5e5a54;
+        --accent: #0f766e;
+        --border: #d9d1c7;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: linear-gradient(180deg, #f3efe8 0%, #ebe3d6 100%);
+        color: var(--text);
+      }
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: min(720px, 100%);
+        background: rgba(255, 253, 249, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 40px 28px;
+        box-shadow: 0 18px 60px rgba(63, 44, 22, 0.12);
+      }
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font-size: 0.85rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 6vw, 4.6rem);
+        line-height: 0.95;
+      }
+      p {
+        margin: 18px 0 0;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+      .note {
+        margin-top: 28px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        font-size: 0.95rem;
+      }
+      strong { color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <p class="eyebrow">Live on GitHub Pages</p>
+        <h1>Simple site, clean setup.</h1>
+        <p>
+          This is a minimal static website for <strong>simpsite7591</strong>.
+          It uses no database, no backend, and no embedded secrets.
+        </p>
+        <p class="note">
+          If this repository ever needs keys later, keep them only in
+          <strong>GitHub repository settings</strong> under
+          <strong>Secrets and variables</strong>, and reference them from
+          GitHub Actions instead of storing them in code.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
